@@ -14,7 +14,7 @@ export default function ScheduleCard() {
     })
 
     return (
-        <Card className="w-full bg-white shadow-sm">
+        <Card className="w-full bg-white shadow-sm mb-10 lg:mb-0">
             <CardHeader className="flex flex-row items-center justify-between py-0 pt-4 px-3">
                 <CardTitle className="text-lg font-semibold text-gray-800">Upcoming Schedule</CardTitle>
                 <Select>

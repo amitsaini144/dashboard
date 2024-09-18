@@ -19,7 +19,7 @@ export default function Dashboard() {
 
         {/* Dashboard Content */}
         <main className="flex-1 overflow-x-hidden overflow-y-auto bg-white py-6 px-8">
-          <h1 className="text-2xl font-semibold mb-6">Dashboard</h1>
+          <h1 className="text-2xl font-semibold mb-6 text-black">Dashboard</h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
             <div className="col-span-1 lg:col-span-2">
