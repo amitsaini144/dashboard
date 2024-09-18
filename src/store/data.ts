@@ -18,15 +18,18 @@ export const announcements = [
         id: 3, title: "IT Department need two more talents for UX/UI Designer position",
         time: "Tuesday, 09:15 AM",
     },
+    { id: 4, title: "New hiring process for every department", time: "3 Minutes ago" },
 ]
 
 export const prioritySchedules = [
-    { id: 1, title: "Review candidate applications", time: "Today, 11:30 AM" }
+    { id: 1, title: "Review candidate applications", time: "Today, 11:30 AM" },
+    { id: 2, title: "Meeting with product designer from IT Department", time: "Today, 12:00 PM" },
 ]
 
 export const otherSchedules = [
     { id: 1, title: "Interview with candidates", time: "Today, 13:00 PM" },
-    { id: 2, title: "Short meeting with product designer from IT Department", time: "Today, 16:15 AM" }
+    { id: 2, title: "Short meeting with product designer from IT Department", time: "Today, 16:00 AM" },
+    { id: 3, title: "Meeting with HR Department", time: "Today, 16:30 AM" },
 ]
 
 export const menuItems = [

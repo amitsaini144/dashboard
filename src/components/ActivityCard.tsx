@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Skeleton } from "@/components/ui/skeleton"
 
 export default function ActivityCard() {
     const [timestamp, setTimestamp] = useState('');
@@ -26,7 +27,11 @@ export default function ActivityCard() {
                 <CardTitle className="text-base font-semibold">Recently Activity</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
-                <p className="text-[10px] text-gray-400">{timestamp}</p>
+                {timestamp ? (
+                    <p className="text-[10px] text-gray-400">{timestamp}</p>
+                ) : (
+                    <Skeleton className="w-[130px] h-[10px] rounded-full bg-gray-50" />
+                )}
                 <p className="text-sm font-medium">You Posted a New Job</p>
                 <p className="text-[11px] text-gray-300">
                     Kindly check the requirements and terms of work and make sure everything is right.

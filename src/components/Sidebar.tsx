@@ -1,14 +1,17 @@
+"use client";
 import Image from "next/image";
-import vartiumImage from "@/assets/images/vasitum.png"
 import SidebarLink from "./SidebarLink"
 import { menuItems, otherMenuItems } from "@/store/data"
+import { useRecoilValue } from 'recoil';
+import { sidebarVisibilityState } from '@/store/atoms';
 
 export default function Sidebar() {
+    const isSidebarVisible = useRecoilValue(sidebarVisibilityState);
     return (
-        <aside className="md:w-24 xl:w-60 p-6 px-5 hidden md:block">
+        <aside className={`${isSidebarVisible ? 'block' : 'hidden'} md:block md:w-24 xl:w-60 p-6 px-5`}>
             <div className="flex items-center mb-8 gap-3 justify-center">
                 <div>
-                    <Image src={vartiumImage} alt="vartium" width={35} height={35} className="hidden md:block pr-1 mr-1" />
+                    <Image src="/vasitum.png" alt="vartium" width={35} height={35} className="pr-1 mr-1" />
                 </div>
                 <span className="text-xl text-blue-800 font-semibold hidden xl:inline">Vasitum</span>
             </div>
